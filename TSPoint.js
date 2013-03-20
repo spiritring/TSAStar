@@ -27,6 +27,12 @@ TSPoint = function (x, y) {
     this.getY = function() {
         return this.m_y;
     }
+    this.equal = function(p) {
+        if (this.m_x == p.m_x && this.m_y == p.m_y){
+            return true;
+        }
+        return false;
+    }
 };
 
 
