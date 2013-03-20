@@ -11,44 +11,43 @@ var NEAStar = function() {
     this.closeList = [];
 
     this.isCloseList = function(pos){
-        if (this.pMap.m_mapclose[pos.m_x*this.pMap.m_width+pos.m_y] == 1){
+        if (this.pMap.m_mapclose[pos.m_x * this.pMap.m_width + pos.m_y] == 1){
             return false;
         }
         return true;
     };
 
     this.isMapBlock = function(pos){
-        if (this.pMap.m_map[pos.m_x*this.pMap.m_width+pos.m_y] == 1){
+        if (this.pMap.m_map[pos.m_x * this.pMap.m_width + pos.m_y] == 1){
             return false;
         }
         return true;
     };
 
     this.run = function() {
-        var node = new TSNode(new TSPoint(2,0), new TSPoint(2,0), new TSPoint(2,4), null);
+        var node = new TSNode(this.pStart, this.pStart, this.pEnd, null);
         while (true){
             if (this.pCurrentPos.equal(this.pEnd)) {
                 break;
             }
-            this.pCurrentPos = node.pPos;
+            this.pCurrentPos = node.pPos.get();
 
             for (var i = 0 ; i < this.openList.length ; i++){
-                var _node = this.openList[i];
-                if (_node.pPos.equal(node.pPos)) {
-                    this.openList.splice(i,i+1);
+                if (this.openList[i].pPos.equal(node.pPos)) {
+                    this.openList.splice(i,1);
                     break;
                 }
             }
 
-            this.closeList.push(node); //TSTS
+            this.closeList.push(node);
             this.pMap.m_mapclose[node.pPos.m_x * this.pMap.m_width + node.pPos.m_y] = 1;
-            for (var i = 0 ; i < 4 ; i++){
+            for (var i = 0 ; i < 8 ; i++){
                 var _Pos = new TSPoint(this.pCurrentPos.m_x + TSDirection[i][0], this.pCurrentPos.m_y + TSDirection[i][1]);
                 if (_Pos.m_x >= 0 && _Pos.m_x < this.pMap.m_height &&
                     _Pos.m_y >= 0 && _Pos.m_y < this.pMap.m_width){
                     if (this.isMapBlock(_Pos) && this.isCloseList(_Pos)){
-                        this.openList.push(new TSNode(_Pos,this.pStart,this.pEnd,node));
-                        this.pMap.m_mapclose[_Pos.m_x*this.pMap.m_width+_Pos.m_y] = 1;
+                        this.openList.push(new TSNode(_Pos, this.pStart, this.pEnd, node));
+                        this.pMap.m_mapclose[_Pos.m_x * this.pMap.m_width + _Pos.m_y] = 1;
                     }
                 }
             }
@@ -59,14 +58,14 @@ var NEAStar = function() {
 
             var minNode = this.openList[0].get();
             for (var i = 0 ; i < this.openList.length; i++){
-                var node = this.openList[i];
-                if (node.nScore < minNode.nScore){
-                    minNode = node.get();;
+                var _node = this.openList[i];
+                if (_node.nScore < minNode.nScore){
+                    minNode = _node;
                 }
             }
-            node = minNode.get();;
+            node = minNode;
         }
-    }
+    };
 
     this.Init = function(start, end, map) {
         this.pStart = start;
@@ -88,11 +87,10 @@ var NEAStar = function() {
             node = node.pFather;
         }
 
-        _map[this.pStart.m_x * this.pMap.m_width + this.pStart.m_y] = 3;
-        _map[this.pEnd.m_x * this.pMap.m_width + this.pEnd.m_y] = 2;
+        _map[this.pStart.m_x * this.pMap.m_width + this.pStart.m_y] = 'S';
+        _map[this.pEnd.m_x * this.pMap.m_width + this.pEnd.m_y] = 'E';
 
         var R = "";
-
         for (var i = 0; i < this.pMap.m_height; i++){
             for (var j = 0 ; j < this.pMap.m_width; j++){
                 var c = _map[i * this.pMap.m_width + j];
@@ -105,7 +103,7 @@ var NEAStar = function() {
                 else if (c == 2){
                     R += '+';
                 }
-                else{
+                else {
                     R += c;
                 }
             }
