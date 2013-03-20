@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TSFileLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TSPoint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TSAStar.iml" afterPath="$PROJECT_DIR$/.idea/TSAStar.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TSAStar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TSFileLoader.js" afterPath="$PROJECT_DIR$/TSFileLoader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TSAStar.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363747136265" ignored="false" />
-    <file path="/main.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363749556187" ignored="false" />
+    <file path="/main.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363750446578" ignored="false" />
     <file path="/TSPoint.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363749433375" ignored="false" />
-    <file path="/TSFileLoader.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363748784203" ignored="false" />
+    <file path="/TSFileLoader.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363750392546" ignored="false" />
     <file path="/fragment.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363749633328" ignored="false" />
+    <file path="/TSAStar.js" changelist="6131ab5e-aa99-4df0-a259-bf6a2e1e0d6e" time="1363750077281" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +55,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.4647202">
+            <state line="8" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NEAStar.hpp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NEAStar.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="280" column="27" selection-start="0" selection-end="8531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TSAStar.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TSAStar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="0" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.64935064">
               <folding />
             </state>
           </provider>
@@ -68,7 +85,7 @@
       <file leaf-file-name="TSFileLoader.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TSFileLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+            <state line="10" column="1" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,7 +94,7 @@
       <file leaf-file-name="fs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.8.9-src/core-modules-sources/lib/fs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="5344" selection-end="5455" vertical-scroll-proportion="0.0">
+            <state line="621" column="9" selection-start="16991" selection-end="16991" vertical-scroll-proportion="-5.8">
               <folding />
             </state>
           </provider>
@@ -86,7 +103,7 @@
       <file leaf-file-name="TSPoint.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TSPoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+            <state line="3" column="28" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +112,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+            <state line="17" column="20" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,9 +145,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/TSFileLoader.js" />
         <option value="$PROJECT_DIR$/TSPoint.js" />
+        <option value="$PROJECT_DIR$/TSFileLoader.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/TSAStar.js" />
       </list>
     </option>
   </component>
@@ -285,11 +303,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.6011004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24984147" sideWeight="0.6712517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -359,13 +377,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/main.js</url>
-          <line>6</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="4" />
     </breakpoint-manager>
   </component>
@@ -405,9 +416,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NEAStar.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="27" selection-start="0" selection-end="8531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TSPoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.8.9-src/core-modules-sources/lib/fs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="5344" selection-end="5455" vertical-scroll-proportion="0.0">
+        <state line="621" column="9" selection-start="16991" selection-end="16991" vertical-scroll-proportion="-5.8">
           <folding />
         </state>
       </provider>
@@ -419,30 +444,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TSFileLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+        <state line="17" column="20" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TSPoint.js">
+    <entry file="file://$PROJECT_DIR$/TSFileLoader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+        <state line="10" column="1" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.4647202">
+        <state line="8" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TSAStar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.64935064">
           <folding />
         </state>
       </provider>

@@ -3,7 +3,9 @@ exports.TSDoFile = function ( path ) {
     try {
         var data = fs.readFileSync(path , "utf-8");
         eval(data);
+    } catch(error) {
+        console.log("Error! = " + path + " " + error);
     } finally {
-        console.log("Cant Find File Path = " + path);
+        console.log("OK! = " + path);
     }
 }
